@@ -57,9 +57,12 @@ function onClick(event) {
     }
 }
 
-var cells = document.getElementsByClassName("square");
+var form = document.getElementById("board");
+var cells = document.getElementsByClassName("cell");
 for (var i = 0; i < cells.length; i++) {
-    cells[i].addEventListener("click", onClick);
+    cells[i].addEventListener(event => {
+
+    });
 }
 
 setTurn();
